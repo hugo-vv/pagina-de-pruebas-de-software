@@ -38,7 +38,7 @@ function JUEGOlvl3() {
         document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 3"
         $(document).ready(function() {
             setTimeout(function() {
-                $(".Tiempolvl3").fadeOut(1500);
+                $(".Puntajelv3").fadeOut(1500);
             }, 9000);
 
 
