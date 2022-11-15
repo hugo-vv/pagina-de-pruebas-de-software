@@ -13,7 +13,7 @@ function JUEGOlvl3() {
         $(document).ready(function() {
             setTimeout(function() {
                 $(".Tiempolvl3").fadeOut(1500);
-            }, 4000);
+            }, 9000);
 
 
         });
@@ -39,7 +39,7 @@ function JUEGOlvl3() {
         $(document).ready(function() {
             setTimeout(function() {
                 $(".Puntajelvl3").fadeOut(1500);
-            }, 4000);
+            }, 9000);
 
 
         });
@@ -321,10 +321,11 @@ function PLAYlvl3() {
 function DETENER_JUEGOlvl3() {
     //INDICA QUE LA FUNCION DE PAUSE SE EJECUTARA UNA VEZ SE DE CLICK AL BOTON DE PAUSE        
     document.getElementById("Pauselvl3").addEventListener('click', PAUSElvl3)
+
     $(document).ready(function() {
         setTimeout(function() {
             $(".Pauselvl3").fadeOut(1500);
-        }, 4000);
+        }, 9000);
 
 
     });
