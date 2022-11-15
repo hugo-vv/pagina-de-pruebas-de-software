@@ -35,17 +35,10 @@ function JUEGOlvl3() {
     //FUNCION QUE UNICAMENTE AUMENTA PUNTOS Y RESETEA LAS VARIABLES AL LLEGAR A CIERTO LIMITE
     function Aumentar_Puntoslvl3() {
         Puntajelvl3++;
-<<<<<<< HEAD
-        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 2"
-        $(document).ready(function() {
-            setTimeout(function() {
-                $(".puntajelv3").fadeOut(1500);
-=======
         document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 3"
         $(document).ready(function() {
             setTimeout(function() {
                 $(".Tiempolvl3").fadeOut(1500);
->>>>>>> 24d3aaf18c2666f1f2a82b2342c98d5f180e2e41
             }, 9000);
 
 
@@ -93,12 +86,7 @@ function JUEGOlvl3() {
                 document.getElementById("Meteorito4lvl3").style.left = "-70%"
                 document.getElementById("Meteorito4lvl3").style.transition = "3s"
             }
-<<<<<<< HEAD
-
-            setInterval(Ganaste_Pantallalvl3, 10)
-=======
             setInterval(Ganaste_Pantallalvl3, 1)
->>>>>>> 24d3aaf18c2666f1f2a82b2342c98d5f180e2e41
 
             Tiempolvl3 = 51
             Puntajelvl3 = 0
