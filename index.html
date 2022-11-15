@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="Estilos.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!--iMPORTE UN TIPO DE LETA-->
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -33,6 +32,7 @@
             <h1 class="Nombre">IRON FIST</h1>
             <h1 class="Texto_Principal">¿LISTO PARA DEFENDER<br> EL PLANETA?</h1>
             <button class="Boton" id="Juego" onclick="Mover()">JUGAR</button>
+
         </section>
         <!--SECCION - 3 ------------------------------------------------------------------------------------------------------->
 
@@ -101,12 +101,10 @@
                         <h3>TIEMPO</h3><span id="Tiempo">70</span></div>
                     <!--Tiempo con su span para la el final del minuto-->
                     <div class="Puntaje">
-                        <h3>PUNTAJE</h3><span id="Puntaje">0&nbsp;/&nbsp;27</span></div>
-                    <!--Puntaje con su span que indica el puntaje-->
+                        <h3>PUNTAJE</h3><span id="Puntaje">0&nbsp;/&nbsp;3</span></div>
                     <div class="Pause" id="Pause">
-                        <h3>PAUSE / REANUDA</h3>
+                        <h3>PAUSE / REANUDAR</h3>
                     </div>
-                    <!--Boton de pause-->
 
                 </div>
 
@@ -187,12 +185,11 @@
                         <h3>TIEMPO</h3><span id="Tiempolvl2">60</span></div>
                     <!--Tiempo con su span para la el final del minuto-->
                     <div class="Puntajelvl2">
-                        <h3>PUNTAJE</h3><span id="Puntajelvl2">0 / 34</span></div>
-                    <!--Puntaje con su span que indica el puntaje-->
+                        <h3>PUNTAJE</h3><span id="Puntajelvl2">0 / 3</span></div>
+
                     <div class="Pauselvl2" id="Pauselvl2">
-                        <h3>PAUSE / REANUDA</h3>
+                        <h3>PAUSE / REANUDAR</h3>
                     </div>
-                    <!--Boton de pause-->
 
                 </div>
 
@@ -238,8 +235,9 @@
                         <h1>LOGRO DESBLOQUEADO:<br> AGILIDAD EXTREMA</h1>
                         <h3>AHORA ESTAS MÁS CERCA DE COMPLETAR ESTE JUEGO, ASÍ QUE PREPARATE PARA LO PEOR, RECUERDA QUE LOS METEORITOS NO SON ALGO PARA TOMÁRSELO A LA LIGERA Y MÁS AUN EN EL SIGUIENTE NIVEL, EN DONDE LA DIFICULTAD AUMENTA EXPONENCIALMENTE
                         </h3>
-
                         <div style="display: flex; width: auto;">
+
+
 
                             <script src="Ejecucion2.js"></script>
                         </div>
@@ -259,12 +257,16 @@
                     <!--Puntaje con su span que indica el puntaje-->
                     <div class="Puntajelvl3">
                         <h3>PUNTAJE</h3>
-                        <span id="Puntajelvl3">0 / 40</span>
+                        <span id="Puntajelvl3">0 / 3</span>
+                        <!--45----------------------------->
                     </div>
                     <!--Boton de pause-->
                     <div class="Pauselvl3" id="Pauselvl3">
                         <h3>PAUSE / REANUDAR</h3>
                     </div>
+
+
+
                 </div>
 
                 <!--CCMIENZO DEL JUEGO------------------------------------------------------>
@@ -338,6 +340,7 @@
                 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
+
             </section>
 
             <div class="Contenedor_LVL">
@@ -365,11 +368,14 @@
                     </div>
                 </div>
 
-                <div class="Nada" id="Nada">
-                    <h2>Una vez completes este nivel, se habilitará la opcion "SIGUIENTE".</h2>
-                    <p>Recuerda que los niveles son progresivos y mejorarán tu nivel de reacción ante estímulos y mucho más importante, te dará una gran sorpresa al final, así que recuerda no perdértela y no parar de intentar
-                    </p>
-                </div>
+
+
+
+                <!----------------------BOTON INICIO---------------------->
+
+                <br>
+                <input class="Boton" type="button" value="INICIO" onclick="location.reload()" />
+
                 <div class="NEXT" id="NEXT">
                     <h2>SIGUIENTE NIVEL&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></h2>
                 </div>
