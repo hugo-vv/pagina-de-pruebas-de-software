@@ -38,14 +38,14 @@ function JUEGOlvl3() {
         document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 4"
         $(document).ready(function() {
             setTimeout(function() {
-                $(".Puntajelvl3").fadeOut(1500);
+                $(".Tiempolvl3").fadeOut(1500);
             }, 9000);
 
 
         });
         if (Puntajelvl3 == 4) {
             Puntajelvl3 = 0
-            Tiempolvl3 = 51
+            Tiempolvl3 = 20
 
             function Contactos() {
                 Swal.fire({
@@ -59,7 +59,8 @@ function JUEGOlvl3() {
 
 
                     timerProgressbar: true,
-                    /*Funcion de cerrar la alerta*/
+
+                    // Funcion de cerrar la alerta
                     allowOutsideClick: true,
                     allowEscapeKey: false,
                     allowEnterkey: false,
@@ -74,18 +75,17 @@ function JUEGOlvl3() {
 
             function Ganaste_Pantallalvl3() {
                 document.getElementById("Meteoritolvl3").style.left = "-70%"
-                document.getElementById("Meteoritolvl3").style.transition = "0s"
+                document.getElementById("Meteoritolvl3").style.transition = "3s"
 
                 document.getElementById("Meteorito2lvl3").style.left = "-70%"
-                document.getElementById("Meteorito2lvl3").style.transition = "0s"
+                document.getElementById("Meteorito2lvl3").style.transition = "3s"
 
                 document.getElementById("Meteorito3lvl3").style.left = "-70%"
-                document.getElementById("Meteorito3lvl3").style.transition = "0s"
+                document.getElementById("Meteorito3lvl3").style.transition = "3s"
 
                 document.getElementById("Meteorito4lvl3").style.left = "-70%"
-                document.getElementById("Meteorito4lvl3").style.transition = "0s"
+                document.getElementById("Meteorito4lvl3").style.transition = "3s"
             }
-
             setInterval(Ganaste_Pantallalvl3, 1)
 
             Tiempolvl3 = 51
