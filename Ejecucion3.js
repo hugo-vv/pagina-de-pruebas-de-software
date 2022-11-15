@@ -35,7 +35,7 @@ function JUEGOlvl3() {
     //FUNCION QUE UNICAMENTE AUMENTA PUNTOS Y RESETEA LAS VARIABLES AL LLEGAR A CIERTO LIMITE
     function Aumentar_Puntoslvl3() {
         Puntajelvl3++;
-        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 4"
+        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 3"
         $(document).ready(function() {
             setTimeout(function() {
                 $(".Tiempolvl3").fadeOut(1500);
@@ -43,7 +43,7 @@ function JUEGOlvl3() {
 
 
         });
-        if (Puntajelvl3 == 4) {
+        if (Puntajelvl3 == 3) {
             Puntajelvl3 = 0
             Tiempolvl3 = 20
 
