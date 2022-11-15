@@ -13,7 +13,7 @@ function JUEGOlvl3() {
         $(document).ready(function() {
             setTimeout(function() {
                 $(".Tiempolvl3").fadeOut(1500);
-            }, 4000);
+            }, 9000);
 
 
         });
@@ -35,17 +35,17 @@ function JUEGOlvl3() {
     //FUNCION QUE UNICAMENTE AUMENTA PUNTOS Y RESETEA LAS VARIABLES AL LLEGAR A CIERTO LIMITE
     function Aumentar_Puntoslvl3() {
         Puntajelvl3++;
-        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 4"
+        document.getElementById("Puntajelvl3").innerHTML = Puntajelvl3 + " / 2"
         $(document).ready(function() {
             setTimeout(function() {
-                $(".Puntajelvl3").fadeOut(1500);
-            }, 4000);
+                $(".puntajelv3").fadeOut(1500);
+            }, 9000);
 
 
         });
         if (Puntajelvl3 == 4) {
             Puntajelvl3 = 0
-            Tiempolvl3 = 51
+            Tiempolvl3 = 20
 
             function Contactos() {
                 Swal.fire({
@@ -74,19 +74,19 @@ function JUEGOlvl3() {
 
             function Ganaste_Pantallalvl3() {
                 document.getElementById("Meteoritolvl3").style.left = "-70%"
-                document.getElementById("Meteoritolvl3").style.transition = "0s"
+                document.getElementById("Meteoritolvl3").style.transition = "3s"
 
                 document.getElementById("Meteorito2lvl3").style.left = "-70%"
-                document.getElementById("Meteorito2lvl3").style.transition = "0s"
+                document.getElementById("Meteorito2lvl3").style.transition = "3s"
 
                 document.getElementById("Meteorito3lvl3").style.left = "-70%"
-                document.getElementById("Meteorito3lvl3").style.transition = "0s"
+                document.getElementById("Meteorito3lvl3").style.transition = "3s"
 
                 document.getElementById("Meteorito4lvl3").style.left = "-70%"
-                document.getElementById("Meteorito4lvl3").style.transition = "0s"
+                document.getElementById("Meteorito4lvl3").style.transition = "3s"
             }
 
-            setInterval(Ganaste_Pantallalvl3, 1)
+            setInterval(Ganaste_Pantallalvl3, 10)
 
             Tiempolvl3 = 51
             Puntajelvl3 = 0
@@ -124,7 +124,7 @@ function JUEGOlvl3() {
 
         document.getElementById("Meteoritolvl3").style.left = Distancia1lvl3 + "%"
         document.getElementById("Meteoritolvl3").style.top = Altura1lvl3 + "px"
-        document.getElementById("Meteoritolvl3").style.transition = "1.9s"
+        document.getElementById("Meteoritolvl3").style.transition = "2s"
     }
 
     setTimeout(Meteorito_Direccionlvl3, 2200)
@@ -137,7 +137,7 @@ function JUEGOlvl3() {
 
         document.getElementById("Meteorito2lvl3").style.left = Distancia2lvl3 + "%"
         document.getElementById("Meteorito2lvl3").style.top = Altura2lvl3 + "px"
-        document.getElementById("Meteorito2lvl3").style.transition = "1.9s"
+        document.getElementById("Meteorito2lvl3").style.transition = "2s"
     }
 
     setTimeout(Meteorito_Direccion2lvl3, 2660)
@@ -150,7 +150,7 @@ function JUEGOlvl3() {
 
         document.getElementById("Meteorito3lvl3").style.left = Distancia3lvl3 + "%"
         document.getElementById("Meteorito3lvl3").style.top = Altura3lvl3 + "px"
-        document.getElementById("Meteorito3lvl3").style.transition = "1.9s"
+        document.getElementById("Meteorito3lvl3").style.transition = "2s"
     }
 
     setTimeout(Meteorito_Direccion3lvl3, 2900)
@@ -163,7 +163,7 @@ function JUEGOlvl3() {
 
         document.getElementById("Meteorito4lvl3").style.left = Distancia4lvl3 + "%"
         document.getElementById("Meteorito4lvl3").style.top = Altura4lvl3 + "px"
-        document.getElementById("Meteorito4lvl3").style.transition = "1.9s"
+        document.getElementById("Meteorito4lvl3").style.transition = "2s"
     }
 
     setTimeout(Meteorito_Direccion4lvl3, 3100)
@@ -221,7 +221,7 @@ function JUEGOlvl3() {
 
         document.getElementById("Meteorito4lvl3").style.left = Distancialvl3 + "px"
         document.getElementById("Meteorito4lvl3").style.top = Alturalvl3 + "px"
-        document.getElementById("Meteorito4lvl3").style.transition = "1.7s"
+        document.getElementById("Meteorito4lvl3").style.transition = "5s"
     }
 
 
@@ -238,19 +238,19 @@ function JUEGOlvl3() {
             document.getElementById("Perdiste_sound").play()
 
             document.getElementById("Meteoritolvl3").style.left = "-70%"
-            document.getElementById("Meteoritolvl3").style.transition = "0s"
+            document.getElementById("Meteoritolvl3").style.transition = "3s"
             setTimeout(Meteorito_Direccion4lvl3, 2000)
 
             document.getElementById("Meteorito2lvl3").style.left = "-70%"
-            document.getElementById("Meteorito2lvl3").style.transition = "0s"
+            document.getElementById("Meteorito2lvl3").style.transition = "3s"
             setTimeout(Meteorito_Direccion4lvl3, 2000)
 
             document.getElementById("Meteorito3lvl3").style.left = "-70%"
-            document.getElementById("Meteorito3lvl3").style.transition = "0s"
+            document.getElementById("Meteorito3lvl3").style.transition = "3s"
             setTimeout(Meteorito_Direccion4lvl3, 2600)
 
             document.getElementById("Meteorito4lvl3").style.left = "-70%"
-            document.getElementById("Meteorito4lvl3").style.transition = "0s"
+            document.getElementById("Meteorito4lvl3").style.transition = "3s"
             setTimeout(Meteorito_Direccion4lvl3, 2900)
 
             Tiempolvl3 = 51
@@ -258,10 +258,10 @@ function JUEGOlvl3() {
         } else {
 
 
-            document.getElementById("Meteoritolvl3").style.transition = "1.9s"
-            document.getElementById("Meteorito2lvl3").style.transition = "1.9s"
-            document.getElementById("Meteorito3lvl3").style.transition = "1.9s"
-            document.getElementById("Meteorito4lvl3").style.transition = "1.9s"
+            document.getElementById("Meteoritolvl3").style.transition = "3s"
+            document.getElementById("Meteorito2lvl3").style.transition = "3s"
+            document.getElementById("Meteorito3lvl3").style.transition = "3s"
+            document.getElementById("Meteorito4lvl3").style.transition = "3s"
         }
     }
 
@@ -270,9 +270,9 @@ function JUEGOlvl3() {
 }
 
 
+
 //LE DECIMOS QUE AL PRESIONAR EL BOTON JUGAR EJECUTARA LA FUNCION PLAY     
 document.getElementById("Playlvl3").addEventListener('click', PLAYlvl3)
-
 
 //ESTE ES EL CONTEO DE LA CUENTA REGRESIVA QUE SE DA DESPUEZ DE PRESINAR JUGAR
 Conteolvl3 = 4
@@ -286,8 +286,6 @@ function PLAYlvl3() {
     document.getElementById("Playlvl3").style.left = "-900px"
         //MUEVE LA DIFICULTAD AL PRESIONAR JUGAR
     document.getElementById("Dificultadlvl3").style.left = "-900px"
-
-
 
     function ARRACARlvl3() {
         JUEGOlvl3()
@@ -324,11 +322,10 @@ function DETENER_JUEGOlvl3() {
     $(document).ready(function() {
         setTimeout(function() {
             $(".Pauselvl3").fadeOut(1500);
-        }, 4000);
+        }, 9000);
 
 
     });
-
     //ESTA VARIABLE INDICA SI SE EJECUTA O NO EL DESPAUSEO
     Activolvl3 = 1
         //HACE QUE EL JUEGO SE DETENGA
@@ -403,7 +400,7 @@ function DETENER_JUEGOlvl3() {
 
                 document.getElementById("Meteoritolvl3").style.left = Distancia1lvl3 + "%"
                 document.getElementById("Meteoritolvl3").style.top = Altura1lvl3 + "px"
-                document.getElementById("Meteoritolvl3").style.transition = "1.9s"
+                document.getElementById("Meteoritolvl3").style.transition = "3s"
             }
 
             setTimeout(Meteorito_Direccionlvl3, 2000)
@@ -416,7 +413,7 @@ function DETENER_JUEGOlvl3() {
 
                 document.getElementById("Meteorito2lvl3").style.left = Distancia2lvl3 + "%"
                 document.getElementById("Meteorito2lvl3").style.top = Altura2lvl3 + "px"
-                document.getElementById("Meteoritolvl3").style.transition = "1.9s"
+                document.getElementById("Meteoritolvl3").style.transition = "3s"
             }
 
             setTimeout(Meteorito_Direccion2lvl3, 2000)
@@ -429,7 +426,7 @@ function DETENER_JUEGOlvl3() {
 
                 document.getElementById("Meteorito3lvl3").style.left = Distancia3lvl3 + "%"
                 document.getElementById("Meteorito3lvl3").style.top = Altura3lvl3 + "px"
-                document.getElementById("Meteoritolvl3").style.transition = "1.9s"
+                document.getElementById("Meteoritolvl3").style.transition = "3s"
             }
 
             setTimeout(Meteorito_Direccion3lvl3, 2000)
@@ -442,7 +439,7 @@ function DETENER_JUEGOlvl3() {
 
                 document.getElementById("Meteorito4lvl3").style.left = Distancia4lvl3 + "%"
                 document.getElementById("Meteorito4lvl3").style.top = Altura4lvl3 + "px"
-                document.getElementById("Meteoritolvl3").style.transition = "1.9s"
+                document.getElementById("Meteoritolvl3").style.transition = "3s"
             }
 
             setTimeout(Meteorito_Direccion4lvl3, 2000)
@@ -452,7 +449,5 @@ function DETENER_JUEGOlvl3() {
 
             Activolvl3 = 1
         }
-
-
     }
-}
+} //CAMBIAMOS EL VALOR DE NUEVO A 1 PARA QUE AL SIGUIENTE CLICK SE EJECUTE EL PAUSE  S
